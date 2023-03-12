@@ -1,0 +1,392 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header_line {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.first-line {
+  /* width: 1394px; */
+  height: 97px;
+}
+
+.header-item-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-right: 100px;
+}
+
+.header__logo {
+  margin-right: 100px;
+}
+
+.header-item-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 20px;
+  border: 0.5px solid #C8BFB3;
+  width: 30px;
+  height: 30px;
+}
+
+.header-item-text {
+  display: flex;
+  align-items: center;
+}
+
+.header-item-text a {
+  /* margin: 0; */
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #413E3A;
+}
+
+.phone-container {
+  flex-basis: content;
+}
+
+.search-form {
+  width: 200px;
+  height: 30px;
+  border: solid #BF9D5B 1px;
+  color: #C4C4C4;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  padding: 0 8px;
+}
+
+.header-item-container_form {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-right: 64px;
+}
+
+.header-item-logo_form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  background-color: #BF9D5B;
+}
+
+.cart-logo {
+  position: relative;
+  width: 60px;
+}
+
+.cart-logo_num {
+  position: absolute;
+  left: 40%;
+  bottom: 75%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #BF9D5B;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
+.cart-logo_num p {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: #FFFFFF;
+}
+
+.cart-logo_sum {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  color: #413E3A;
+  margin-top: 4px;
+}
+
+.menu-button {
+  display: none;
+  width: 40px;
+  height: 40px;
+  background-color: #BF9D5B;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-button-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 19px;
+  height: 13px;
+
+}
+
+.menu-button-line {
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+.header-item-logo_img768, .header-item-logo__img480 {
+  display: none;
+}
+
+/* Вторая линия */
+
+.grey-line, .rose-line{
+  width: 100%;
+  height: 77px;
+}
+
+.grey-line {
+  background-color: #F6F5F3;
+
+}
+
+.rose-line {
+  background-color:#F0E8D9;
+}
+
+.second-line-item {
+  margin: 48px;
+}
+
+.second-line-logo {
+  border: none;
+}
+
+.catalog-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 49px;
+  background-color: #BF9D5B;
+  margin-right: 80px;
+  padding: 0 27px;
+  flex-shrink: 0.8;
+}
+
+.catalog-logo-container {
+  margin-right: 10px;
+  width: 13px;
+  height: 9px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.catalog-logo-line {
+  width: 100%;
+  height: 2px;
+  background-color: #FFFFFF;
+}
+
+
+
+.catalog-button a {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+
+/* Футер */
+
+
+.footer-grey-container {
+  height: 100%;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-grey-content-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-phone-container {
+  margin-right: 0px;
+}
+
+/* Темная часть */
+
+.footer-brown {
+  width: 100%;
+  height: 195px;
+  background-color: #595146;
+  display:flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-brown-container {
+  margin-top: 39px;
+  width: 1400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-headline{
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+}
+
+.footer-address {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.footer-text {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+
+.down-text {
+  margin-top: 41px;
+}
+
+.social-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.icon-container {
+  margin-right: 8px;
+}
+.icon-container a {
+  position: absolute;
+  display: block;
+  width: 23px;
+  height: 23px;
+  content: " ";
+}
+
+.footer-big-text {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #FFFFFF;
+  margin-bottom: 20px;
+}
+
+.feedback-button {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  color: #FFFFFF;
+  padding: 9px 30px;
+  background-color: #BF9D5B;
+}
+
+.footer-feedback-container {
+  width: 430px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+/* Полоска с копирайтом */
+
+.footer-copyright {
+  border-top: #61584D 1px solid;
+  width: 100%;
+  height: 40px;
+  background-color: #595146;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-copyright-container {
+  width: 1400px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.copyright-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 11px;
+  color: #817E7A;
+}
+
+.footer-copyright-container a {
+  text-decoration: underline;
+}
+
+
+.footer-text-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 150px;
+  width: auto;
+  margin-right: 170px;
+}
+
+
+.footer-address {
+  margin-right: 0px;
+}
+.footer-text-container > div {
+  margin-right: 50px;
+}
+
+.menu-button {
+  display: none;
+}
+/* -------Адаптив------- */
+
+
+
+
+
+
+
+
+
+
+
+.
