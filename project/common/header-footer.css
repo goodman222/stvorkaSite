@@ -285,6 +285,10 @@ header {
 
 /* Футер */
 
+footer {
+  width: 100%;
+}
+
 
 .footer-grey-container {
   height: 100%;
