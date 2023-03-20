@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="../common/header-footer.css">
     <link rel="stylesheet" href="../common/header-footer-adaptive.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+
     <title>Створка</title>
   </head>
   <body>
@@ -130,34 +132,37 @@
     <!-- Тело страницы -->
 
     <!-- Фон с надписью -->
-    <div class="background-container">
-      <div class="backgorund_top">
-        <div class="backgorund__text">
-          Створка
-        </div>
-        <div class="backgorund__text">
-          Створка
-        </div>
-      </div>
+    <div class="background-box">
 
-      <div class="backgorund_bottom">
-        <div class="backgorund__horizontal-text">
-          Створка
+      <div class="background-container">
+        <div class="backgorund_top">
+          <div class="backgorund__text">
+            Створка
+          </div>
+          <div class="backgorund__text second-text">
+            Створка
+          </div>
         </div>
-        <div class="backgorund__text bottom-text">
-          Створка
+
+        <div class="backgorund_bottom">
+          <div class="backgorund__horizontal-text">
+            Створка
+          </div>
+          <div class="backgorund__text bottom-text">
+            Створка
+          </div>
         </div>
+
       </div>
 
     </div>
-
 
 
     <div class="page-container">
       <div class="content-container">
 
         <!-- Блок 1 -->
-        <div class="content-block">
+        <div class="content-block block1 unhidden">
           <div class="block-text-container">
 
             <h1 сlass="block-header">Двери на все случаи жизни</h1>
@@ -168,7 +173,9 @@
             </div>
           </div>
           <div class="block-pic-contianer">
-            <img src="../pic/main-page/block1_1000.jpg" alt="">
+            <img class="img1000" src="../pic/main-page/block1_1000.jpg" alt="">
+            <img class="img768" src="../pic/main-page/block1_768.jpg" alt="">
+            <img class="img480" src="../pic/main-page/block1_480.jpg" alt="">
           </div>
 
         </div>
@@ -204,33 +211,45 @@
 
         <!-- Блок 3(с картинками) -->
 
-        <div class="content-block pics-block">
-          <!-- Левая колонка -->
-            <div class="pics-block-column pics-left-column">
-              <h1>Вместе создадим уют в вашем доме</h1>
-              <div class="link-block">
-                <a href="#">Межкомнатные</a>
-                <a class="link-word" href="#">двери</a>
-              </div>
-              <a class="link-2" href="#">Дверной погонаж</a>
-              <a class="link-3" href="#">Фурнитура</a>
-            </div>
+        <div class="pics-block">
 
-            <!-- Правая колонка -->
-            <div class="pics-block-column pics-right-column">
-              <div class="link-block link-4">
-                <a href="#">Входные</a>
-                <a class="link-word" href="#">двери</a>
-              </div>
-              <div class="block-button pics-block-button">
-                <div class="pics-button-logo-container">
-                  <img src="../pic/main-page/white_row.svg" alt="">
-                </div>
-                <a href="#">Посмотреть весь каталог</a>
-              </div>
-            </div>
-
+          <div class="pics-block-item item-0">
+            <h1>Вместе создадим уют в вашем доме</h1>
           </div>
+
+          <div class="pics-block-item item-1">
+            <div class="link-block link-1">
+              <a href="#">Межкомнатные</a>
+              <a class="link-word" href="#">двери</a>
+            </div>
+          </div>
+
+          <div class="pics-block-item item-2">
+            <a class="link-2" href="#">Дверной<br>погонаж</a>
+          </div>
+
+          <div class="pics-block-item item-3">
+            <div class="link-block link-3">
+              <a href="#">Входные</a>
+              <a class="link-word" href="#">двери</a>
+            </div>
+          </div>
+
+          <div class="pics-block-item item-4">
+            <a class="link-4" href="#">Фурнитура</a>
+          </div>
+
+          <div class=" item-5">
+            <div class="block-button pics-block-button">
+              <div class="pics-button-logo-container">
+                <img src="../pic/main-page/white_row.svg" alt="">
+              </div>
+              <a href="#">Посмотреть весь каталог</a>
+            </div>
+          </div>
+
+        </div>
+
 
         <div class="background_grey">
 
@@ -239,7 +258,7 @@
 
         <!-- Блок 4(Почему выбирают у нас) -->
 
-        <div class="content-block choose-us-block">
+        <div class="content-block choose-us-block unhidden">
 
             <div class="content-container choose-us-content">
               <h1>Почему выбирают у нас?</h1>
@@ -272,14 +291,14 @@
 
         <!-- Блок 5(Хиты продаж) -->
 
-        <div class="content-block bestsellers-block">
+        <div class="content-block bestsellers-block unhidden">
           <h1>Хиты продаж</h1>
 
           <div class="catalog-items">
 
             <img src="../pic/main-page/left_row_gold.svg" alt="">
 
-            <div class="catalog-item">
+            <div class="catalog-item catalog-item-1">
 
               <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
 
@@ -300,7 +319,7 @@
               </div>
             </div>
 
-            <div class="catalog-item">
+            <div class="catalog-item catalog-item-2">
               <img class="catalog-pic" src="../pic/main-page/door2.jpg" alt="">
 
               <div class="catalog-header">
@@ -320,7 +339,7 @@
               </div>
             </div>
 
-            <div class="catalog-item">
+            <div class="catalog-item catalog-item-3">
               <img class="catalog-pic" src="../pic/main-page/door3.jpg" alt="">
 
               <div class="catalog-header">
@@ -344,11 +363,19 @@
 
           </div>
 
+          <div class="switches">
+            <div class="switch active"></div>
+            <div class="switch"></div>
+            <div class="switch"></div>
+            <div class="switch"></div>
+            <div class="switch"></div>
+
+          </div>
         </div>
 
         <!-- Блок 6(хотите новую дверь) -->
 
-        <div class="content-block new-door-block">
+        <div class="content-block new-door-block unhidden">
 
           <h1>Хотите новую дверь?</h1>
 
@@ -420,25 +447,27 @@
 
         <!-- Блок 7 (установленные двери) -->
 
-        <div class="content-block installed-block">
+        <div class="content-block installed-block unhidden">
           <h1>Установленные двери</h1>
 
           <div class="installed-pics-container">
 
             <div class="installed-pic1">
-              <img src="../pic/main-page/installed1.jpg" alt="">
+              <img class="img1000" src="../pic/main-page/installed1.jpg" alt="">
+              <img class="img768" src="../pic/main-page/installed1_768.jpg" alt="">
+              <img class="img480" src="../pic/main-page/installed1_480.png" alt="">
             </div>
 
             <div class="installed-pic2">
-              <img src="../pic/main-page/installed2.jpg" alt="">
+              <img class="img1000" src="../pic/main-page/installed2.jpg" alt="">
             </div>
 
             <div class="installed-pic3">
-              <img src="../pic/main-page/installed3.jpg" alt="">
+              <img class="img1000" src="../pic/main-page/installed3.jpg" alt="">
             </div>
 
             <div class="installed-pic4">
-              <img src="../pic/main-page/installed4.jpg" alt="">
+              <img class="img1000" src="../pic/main-page/installed4.jpg" alt="">
             </div>
 
             <div class="pic-frame">
@@ -452,7 +481,7 @@
 
         <!-- Блок 8 (поставщики) -->
 
-        <div class="content-block vendors-block">
+        <div class="content-block vendors-block unhidden">
           <h1>Наши поставщики</h1>
 
           <div class="vendors-items">
@@ -467,6 +496,14 @@
             <img class="vendors-item4" src="../pic/main-page/vendor4.png" alt="">
 
             <img class="vendors-row "src="../pic/main-page/right_row_gold.svg" alt="">
+
+          </div>
+          <div class="switches">
+            <div class="switch active"></div>
+            <div class="switch"></div>
+            <div class="switch"></div>
+            <div class="switch"></div>
+            <div class="switch"></div>
 
           </div>
         </div>
