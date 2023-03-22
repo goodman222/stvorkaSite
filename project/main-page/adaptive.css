@@ -49,7 +49,7 @@
     width: 1000px;
   }
 
-/* Блок 1 */
+  /* Блок 1 */
 
   .block1 {
     padding-left: 20px;
@@ -72,12 +72,12 @@
     padding-left: 25px;
   }
 
-/* Блок 2 */
+  /* Блок 2 */
   .horizontal-container {
     width: 636px;
   }
 
-/* Блок 3 */
+  /* Блок 3 */
   .pics-block {
     grid-template-columns: 334px 367px 282px;
     grid-template-rows:179px 406px 127px 167px;
@@ -102,7 +102,7 @@
     margin-left: 5px;
   }
 
-/* Блок 4 */
+  /* Блок 4 */
 
   .choose-us-pic, .pic-frame {
     width: 395px;
@@ -125,7 +125,7 @@
     bottom: 56px;
   }
 
-/* Блок 5 */
+  /* Блок 5 */
 
   .catalog-items {
     overflow: hidden;
@@ -143,7 +143,7 @@
     padding: 0px 20px;
   }
 
-/* Блок 6 */
+  /* Блок 6 */
 
   .new-door-block {
     height: 1029px;
@@ -203,7 +203,7 @@
 
 @media (min-width: 768px) and (max-width: 999px) {
 
-.img1000 {
+.img1000, .img420, .img320 {
   display: none;
 }
 
@@ -239,7 +239,7 @@
 }
 
 .background_grey {
-  height: 4251px;
+  height: 4300px;
 }
 
 .content-container{
@@ -397,18 +397,7 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
 
-/* !!!Убрать */
-
-  .content-block {
-    display: none;
-  }
-
-  .unhidden {
-    display: flex;
-  }
-/* ///// */
-
-  .img1000 {
+  .img1000, .img768, .img320 {
     display: none;
   }
 
@@ -519,6 +508,7 @@
 
   .switches {
     display: flex;
+    margin-top: 10px;
   }
 
   .catalog-item-3, .catalog-item-2 {
@@ -611,16 +601,308 @@
   width: 36%;
 }
 
+.background_grey {
+  height: 5230px;
+}
 
 }
 
+@media (max-width: 480px) {
+
+    /* !!!Убрать */
+
+    .content-block {
+      display: none;
+    }
+
+    .unhidden {
+      display: flex;
+    }
+    /* ///// */
 
 
 
+    .img1000, .img768, .img480 {
+      display: none;
+    }
+
+    .img320 {
+      display: block;
+    }
+
+    .background-box {
+      display: none;
+    }
+
+    .content-container {
+      width: 100%;
+      padding: 0px 20px;
+    }
+
+    h1 {
+      font-size: 32px;
+    }
+
+    /* Блок 1 */
 
 
+    .block1 {
+      flex-direction: column-reverse;
+    }
+
+    .block-pic-contianer {
+      width: 100%;
+    }
+
+    .block-pic-contianer img {
+      width: 100%;
+    }
+
+    .block-text-container {
+      width: 100%;
+      margin-top: 36px;
+    }
+
+    .block-text-container h1 {
+      margin-bottom: 27px;
+    }
+
+    .block-text-container p {
+      margin-bottom: 50px;
+    }
+
+    .block-button {
+      width: 100%;
+    }
+
+    .block-button a {
+      text-align: center;
+    }
+
+    /* Блок 2 */
+
+    .horizontal-container {
+      width: 100%;
+      max-width: 256px;
+      /* height: 564px; */
+      flex-wrap: wrap;
+    }
+
+    .about-us-item {
+      margin-bottom: 40px;
+    }
+
+    /* Блок 3 */
+
+    .pics-block {
+      width: 100%;
+      height: auto;
+      grid-template-areas:
+      "A"
+      "B"
+      "C"
+      "D"
+      "E"
+      "F";
+      grid-template-columns: 100% ;
+      grid-template-rows: 161px 420px 289px 221px 325px 145px;
+    }
+
+    .item-0 h1 {
+      max-width: 220px;
+    }
+
+    .item-1 {
+      background-image: url('../pic/main-page/pics-block1_768.png');
+    }
+
+    .item-2 {
+      background-image: url('../pic/main-page/pics-block2_768.jpg');
+    }
+
+    .item-3 {
+      background-image: url('../pic/main-page/pics-block3_480.jpg');
+      grid-area: E;
+    }
+
+    .item-4 {
+      background-image: url('../pic/main-page/pics-block4_768.jpg');
+      grid-area: D;
+    }
+
+    .pics-block-button {
+      height: 145px;
+    }
+
+    .link-1 {
+      left: 48px;
+      top: 55px;
+    }
+
+    .link-2 {
+      left: 144px;
+      top: 141px;
+    }
+
+    .link-4 {
+      left: 109px;
+      top: 114px;
+    }
+
+    .link-3 {
+      left: 107px;
+      top: 138px;
+    }
+
+    .item-3 {
+      background-image: url('../pic/main-page/pics-block3_320.png');
+    }
+
+    .block-button a {
+      padding: 0;
+      padding-top: 15px;
+    }
+
+    .pics-button-logo-container {
+      margin-right: 5px;
+    }
+
+    /* Блок 4 */
+
+    .choose-us-pic {
+      display: none;
+    }
+
+    .choose-us-item {
+      width: 100%;
+    }
+      /* !!!!!!! Чтобы не рсаширялось */
+    .link-block {
+      width: auto;
+    }
+
+    h3 {
+      font-size: 24px;
+    }
+
+    /* Блок 5 */
+
+    .bestsellers-block {
+      margin-top: 30px;
+    }
+
+    .switches {
+      display: flex;
+      margin-top: 10px;
+    }
+
+    .catalog-item-3, .catalog-item-2 {
+      display: none;
+    }
+
+    .catalog-items>img {
+      display: none;
+    }
+
+    .catalog-items {
+      /* margin-right: 20px; */
+      justify-content: center;
+    }
+
+    .catalog-item {
+      width: 87%;
+    }
+
+    .catalog-price {
+      width: 78%;
+    }
+
+    /* Блок 6 */
+
+    .new-door-block h1 {
+        max-width: 280px;
+        margin-left: 40px;
+    }
+
+    .new-door-block {
+      height: 1378px;
+      padding-left: 0px;
+      align-items: center;
+      background-image: url('../pic/main-page/block-background480.png');
+    }
 
 
+    .new-door-items {
+      flex-wrap: wrap;
+      width: 235px;
+      align-items: stretch;
+      justify-content: center;
+    }
 
+    .new-door-item {
+      margin-right: 0px;
+      margin-top: 45px;
+    }
+
+    .new-door-block .block-button {
+      margin-right: 0px;
+      width: 75%;
+      text-align: center;
+    }
+
+    .new-door-text p {
+      font-size: 18px;
+    }
+
+    /* Блок 7 */
+
+    .installed-pics-container .pic-frame {
+      display: none;
+    }
+
+    .installed-pics-container {
+      width: 100%;
+      display: block;
+    }
+
+    .installed-pic1 img {
+      width: 100%;
+    }
+
+    .installed-block {
+      margin-top: 80px;
+    }
+
+    /* Блок 8 */
+
+    .vendors-item4, .vendors-item3, .vendors-item2 {
+      display: none;
+    }
+
+    .vendors-items {
+      margin-bottom: 35px;
+      justify-content: center;
+    }
+
+    .vendors-items img {
+      width: 80%;
+    }
+    .vendors-row {
+      display: none;
+    }
+
+    .vendors-item1 {
+      width: 49%;
+    }
+
+    .vendors-item2 {
+      width: 36%;
+    }
+
+    .background_grey {
+      height: 5260px;
+    }
 
 }
+
+  /*  */

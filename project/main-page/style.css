@@ -3,7 +3,7 @@ p, a, div, h1, h2 {
   font-family: 'Montserrat', sans-serif;
 }
 
-.img768 {
+.img768, .img480, .img320 {
   display: none;
 }
 
