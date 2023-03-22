@@ -1,0 +1,899 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../common/reset.css">
+    <link rel="stylesheet" href="../common/font.css">
+    <link rel="stylesheet" href="../common/header-footer.css">
+    <link rel="stylesheet" href="../common/header-footer-adaptive.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <title>Створка</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header_line first-line">
+
+        <div class="header__logo">
+          <img src="../pic/header/logo.svg" alt="">
+        </div>
+
+        <div class="header-item-container">
+          <div class="header-item-logo">
+            <img class="header-item-logo__img"src="../pic/header/location.svg" alt="">
+          </div>
+          <div class="header-item-text">
+            <a href="#">г.Юрга</a>
+          </div>
+        </div>
+
+        <div class="header-item-container">
+          <div class="header-item-logo">
+            <img class="header-item-logo__img"src="../pic/header/calc.svg" alt="">
+          </div>
+          <div class="header-item-text">
+            <a href="#">Вызвать замерщика</a>
+          </div>
+        </div>
+
+        <div class="header-item-container phone-container">
+          <div class="header-item-logo">
+            <img class="header-item-logo__img"src="../pic/header/logo_whatsapp.svg" alt="">
+          </div>
+          <div class="header-item-logo">
+            <img class="header-item-logo__img"src="../pic/header/logo_phone.svg" alt="">
+          </div>
+          <div class="header-item-text">
+            <a class="phone-number-text" href="#">8 923 486 68 16</a>
+          </div>
+        </div>
+
+        <div class="header-item-container_form">
+          <input class="search-form" type="text" name="" value="" placeholder="поиск">
+          <div class="header-item-logo_form">
+            <img class="header-item-logo__img loop-logo"src="../pic/header/logo_loop.svg" alt="">
+            <img class="header-item-logo__img480"src="../pic/header/loop_480.svg" alt="">
+          </div>
+        </div>
+
+        <div class="cart-logo">
+            <img class="header-item-logo_img" src="../pic/header/logo_frame_cart.svg" alt="">
+            <!-- Картинка без рамки -->
+            <img class="header-item-logo_img768" src="../pic/header/cart_768.svg" alt="">
+            <div class="cart-logo_num">
+              <p>1</p>
+            </div>
+            <p class="cart-logo_sum">0 руб.</p>
+        </div>
+
+        <div class="menu-button">
+          <div class="menu-button-logo">
+              <div class="menu-button-line"></div>
+              <div class="menu-button-line"></div>
+              <div class="menu-button-line"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вторая линия -->
+      <div class="header_line grey-line">
+
+          <div class="catalog-button">
+            <div class="catalog-logo-container">
+              <div class="catalog-logo-line"></div>
+              <div class="catalog-logo-line"></div>
+              <div class="catalog-logo-line"></div>
+            </div>
+            <a href="index.html">Весь каталог</a>
+          </div>
+
+          <div class="header-item-container second-line-item">
+            <div class="header-item-logo second-line-logo">
+              <img class="header-item-logo__img"src="../pic/header/door_1.svg" alt="">
+            </div>
+            <div class="header-item-text">
+              <a href="#">Межкомнатные двери</a>
+            </div>
+          </div>
+
+          <div class="header-item-container second-line-item">
+            <div class="header-item-logo second-line-logo">
+              <img class="header-item-logo__img"src="../pic/header/door_2.svg" alt="">
+            </div>
+            <div class="header-item-text">
+              <a href="#">Входные двери</a>
+            </div>
+          </div>
+
+          <div class="header-item-container second-line-item">
+            <div class="header-item-logo second-line-logo">
+              <img class="header-item-logo__img"src="../pic/header/door_3.svg" alt="">
+            </div>
+            <div class="header-item-text">
+              <a href="#">Дверная фурнитура</a>
+            </div>
+          </div>
+
+          <div class="header-item-container second-line-item">
+            <div class="header-item-logo second-line-logo">
+              <img class="header-item-logo__img"src="../pic/header/door_4.svg" alt="">
+            </div>
+            <div class="header-item-text">
+              <a href="#">Дверной погонаж</a>
+            </div>
+          </div>
+      </div>
+
+    </header>
+
+    <div class="page-container">
+      <div class="content-container">
+        <div class="navigation">
+          <a href="../main-page/index.html">Главная</a> / <a href="index.html">Каталог</a>
+        </div>
+
+        <h1>Каталог</h1>
+
+        <div class="string">
+          <h2>Фильтр</h2>
+          <div class="sorting">
+            <p>Сортировка</p>
+            <div class="sorting-dropdown">
+              <p>по популярности</p>
+              <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="catalog-container">
+
+          <div class="filter">
+
+            <h3>Категории дверей</h3>
+
+            <div class="category">
+
+              <div class="check-box check-box-active">
+                <div class="check-mark">
+                  <img src="../pic/catalog/check_mark.svg" alt="">
+                </div>
+                <p>Межкомнатные двери</p>
+              </div>
+
+              <div class="check-box">
+                <div class="check-mark">
+                  <img src="../pic/catalog/check_mark.svg" alt="">
+                </div>
+                <p>Входные двери</p>
+              </div>
+
+              <div class="check-box">
+                <div class="check-mark">
+                  <img src="../pic/catalog/check_mark.svg" alt="">
+                </div>
+                <p>Дверная  фурнитура</p>
+              </div>
+
+              <div class="check-box">
+                <div class="check-mark">
+                  <img src="../pic/catalog/check_mark.svg" alt="">
+                </div>
+                <p>Дверной поганаж</p>
+              </div>
+
+            </div>
+
+            <div class="filter-dropdown"><!--Цена-->
+
+              <div class="dropdown-header">
+                <h1>Цена (руб)</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+
+                <div class="price-input">
+                  <input type="text" name="" value="">
+                  <div class=""></div>
+                  <input type="text" name="" value="">
+                </div>
+
+                <div class="price-line">
+                  <div class="price-min price-circle">
+                    <div class="price-gold-line"></div>
+                  </div>
+                  <div class="price-max price-circle"></div>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="filter-dropdown"><!--Цвет-->
+
+              <div class="dropdown-header">
+                <h1>Цвет</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Белый</p>
+                  </div>
+                  <p>19</p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark light">
+                      <img src="../pic/catalog/check_mark_white.svg" alt="">
+                    </div>
+                    <p>Светлый</p>
+                  </div>
+                  <p>47</p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark light-brown">
+                      <img src="../pic/catalog/check_mark_white.svg" alt="">
+                    </div>
+                    <p>Светло-коричневый</p>
+                  </div>
+                  <p>231</p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark dark-brown">
+                      <img src="../pic/catalog/check_mark_white.svg" alt="">
+                    </div>
+                    <p>Темно-коричневый</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark black">
+                      <img src="../pic/catalog/check_mark_white.svg" alt="">
+                    </div>
+                    <p>Темный</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark grey">
+                      <img src="../pic/catalog/check_mark_white.svg" alt="">
+                    </div>
+                    <p>Серый</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <a href="#">Показать все</a>
+
+              </div>
+            </div>
+
+            <div class="filter-dropdown"><!--Тип полотна-->
+
+              <div class="dropdown-header">
+                <h1>Тип полотна</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Со стеклом</p>
+                  </div>
+                  <p>98</p>
+                </div>
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Без стекла</p>
+                  </div>
+                  <p>18</p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="filter-dropdown"><!--Покрытие-->
+
+              <div class="dropdown-header">
+                <h1>Покрытие</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Экошпон</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>ПВХ</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Ламинат</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Эмаль</p>
+                  </div>
+                  <p></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Натуральный шпон</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <a href="#">Показать все</a>
+
+              </div>
+            </div>
+
+            <div class="filter-dropdown dropdown-closed"><!--Количество створок-->
+
+              <div class="dropdown-header">
+                <h1>Количество створок</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+                <!-- Содержимое -->
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Одна</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Две</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="filter-dropdown"><!--Бренд-->
+
+              <div class="dropdown-header">
+                <h1>Бренд</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+                <!-- Содержимое -->
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Сибирь-профил</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Центурион</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Feronni</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box check-box-active">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Albero</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>Luxor</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+              </div>
+            </div>
+
+            <div class="filter-dropdown"><!--Размеры-->
+
+              <div class="dropdown-header">
+                <h1>Размеры</h1>
+                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              </div>
+
+              <div class="dropdown-content">
+                <!-- Содержимое -->
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>400 x 2000</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>600 x 2000</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+
+                <div class="check-box">
+                  <div class="check-box-item">
+                    <div class="check-mark">
+                      <img src="../pic/catalog/check_mark.svg" alt="">
+                    </div>
+                    <p>700 x 2000</p>
+                  </div>
+                  <p><!--Число--></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="filter-button">
+              <button type="button" name="button">Найти</button>
+              <button class="grey-buton" type="button" name="button">Сброс</button>
+            </div>
+
+
+          </div><!--/фильтр-->
+
+          <div class="catalog-grid">
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/catalog/door-active.png" alt="">
+
+              <div class="catalog-header">
+                <p>Вена Глянец стекло матовое</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+            <div class="catalog-item catalog-item-1">
+              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+              <div class="catalog-header">
+                <p>РИМ Vinil Серый</p>
+              </div>
+
+              <div class="catalog-description">
+                <p>Дверь межкомнатная</p>
+              </div>
+
+              <div class="catalog-price">
+                <p>5 600 руб.</p>
+              </div>
+
+              <div class="catalog-more-button">
+                <a href="#">Подробнее</a>
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+      </div>
+    </div>
+
+
+
+    <!-- Футер -->
+    <footer>
+      <!-- Серая полоса -->
+      <div class="header_line rose-line">
+        <div class="footer-grey-container">
+
+          <div class="header__logo">
+            <img src="../pic/header/logo.svg" alt="">
+          </div>
+
+
+          <div class="header-grey-content-box">
+            <div class="header-item-container footer-calc-container">
+              <div class="header-item-logo">
+                <img class="header-item-logo__img"src="../pic/header/calc.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Вызвать замерщика</a>
+              </div>
+            </div>
+
+            <div class="header-item-container footer-phone-container">
+              <div class="header-item-logo phone-logo-360px">
+                <img class="header-item-logo__img"src="../pic/header/logo_phone.svg" alt="">
+              </div>
+              <div class="header-item-text phone-360px">
+                <a href="#">8 923 486 68 16</a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <!-- Темная часть футера -->
+      <div class="footer-brown">
+        <div class="footer-brown-container">
+
+          <div class="footer-item">
+            <p class="footer-headline">АДРЕС</p>
+
+            <div class="header-item-container footer-address">
+              <div class="header-item-logo">
+                <img class="header-item-logo__img"src="../pic/header/location.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <p  class="footer-address">г.Юрга пр. Ленина д.16</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-text-container">
+
+            <div class="footer-item footer-catalog">
+              <a class="footer-headline footer-catalog" href="index.html">КАТАЛОГ</a>
+              <a class="footer-text" href="#">Межкомнатные двери</a>
+              <a class="footer-text" href="#">Входные двери</a>
+            </div>
+
+            <div class="footer-item down-text">
+              <a class="footer-text" href="#">Дверная фурнитура</a>
+              <a class="footer-text" href="#">Дверной погонаж</a>
+            </div>
+
+            <div class="footer-item">
+              <a class="footer-headline" href="#">НОВОСТИ</a>
+              <a class="footer-headline" href="#">КОНТАКТЫ</a>
+            </div>
+
+          </div>
+
+
+          <div class="footer-feedback-container">
+            <div class="footer-item social-container">
+              <p class="footer-headline" href="#">МЫ В СОЦ. СЕТЯХ</p>
+              <div class="social-icon">
+                <div class="icon-container">
+                  <a href="#"></a>
+                  <img src="../pic/header/telegram.svg" alt="">
+                </div>
+                <div class="icon-container">
+                  <a href="#"></a>
+                  <img src="../pic/header/watsapp.svg" alt="">
+                </div>
+                <div class="icon-container">
+                  <a href="#"></a>
+                  <img src="../pic/header/instagram.svg" alt="">
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-item call-us-container">
+              <p class="footer-big-text">Остались вопросы?</p>
+              <button class="feedback-button" type="button" name="button">Связаться с нами</button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-copyright">
+        <div class="footer-copyright-container">
+          <p class="copyright-text years-text">© 2002-2021 “Створка”</p>
+          <p class="copyright-text">Информация представленная на сайте имеет информативный характер и не является публичной офертой. Все подробности уточняйте у менеджеров.</p>
+          <a class="copyright-text policy-text" href="#">Политика конфиденциальности</a>
+        </div>
+      </div>
+
+
+
+
+
+    </footer>
+
+    <script src="script.js" charset="utf-8"></script>
+  </body>
+</html>
