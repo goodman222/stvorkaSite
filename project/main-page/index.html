@@ -12,7 +12,7 @@
 
     <title>Створка</title>
   </head>
-  <body>
+  <body class="">
     <!-- Header -->
     <header class="header">
       <div class="header_line first-line">
@@ -79,54 +79,89 @@
       </div>
 
       <!-- Вторая линия -->
-      <div class="header_line grey-line">
+      <img class="menu-close-button" src="../pic/header/x.svg" alt="">
+      <div class="menu-container">
 
-          <div class="catalog-button">
-            <div class="catalog-logo-container">
-              <div class="catalog-logo-line"></div>
-              <div class="catalog-logo-line"></div>
-              <div class="catalog-logo-line"></div>
-            </div>
-            <a href="../catalog/index.html">Весь каталог</a>
-          </div>
+        <div class="header_line grey-line">
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_1.svg" alt="">
+            <div class="catalog-button">
+              <div class="catalog-logo-container">
+                <div class="catalog-logo-line"></div>
+                <div class="catalog-logo-line"></div>
+                <div class="catalog-logo-line"></div>
+              </div>
+              <a href="../catalog/index.html">Весь каталог</a>
             </div>
-            <div class="header-item-text">
-              <a href="#">Межкомнатные двери</a>
+            <a class="menu-catalog-link" href="../catalog/index.html">Каталог</a>
+            <div class="header-item-container second-line-item">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_1.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Межкомнатные двери</a>
+              </div>
             </div>
-          </div>
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_2.svg" alt="">
+            <div class="header-item-container second-line-item">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_2.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Входные двери</a>
+              </div>
             </div>
-            <div class="header-item-text">
-              <a href="#">Входные двери</a>
-            </div>
-          </div>
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_3.svg" alt="">
+            <div class="header-item-container">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_3.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Дверная фурнитура</a>
+              </div>
             </div>
-            <div class="header-item-text">
-              <a href="#">Дверная фурнитура</a>
-            </div>
-          </div>
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_4.svg" alt="">
+            <div class="header-item-container second-line-item">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_4.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Дверной погонаж</a>
+              </div>
             </div>
-            <div class="header-item-text">
-              <a href="#">Дверной погонаж</a>
+        </div>
+
+        <div class="menu-extra-items">
+        <a href="#">Новости</a>
+        <a href="#">Контакты</a>
+        <div class="header-item-container phone-container">
+          <div class="header-item-logo">
+            <img class="header-item-logo__img"src="../pic/header/logo_phone.svg" alt="">
+          </div>
+          <div class="header-item-text">
+            <a class="phone-number-text" href="#">8 923 486 68 16</a>
+          </div>
+        </div>
+        <div class="footer-item social-container">
+          <p class="footer-headline" href="#">ПРИСОЕДИНЯЙТЕСЬ К НАМ</p>
+          <div class="social-icon">
+            <div class="icon-container">
+              <a href="#"></a>
+              <img src="../pic/header/telegram-menu.svg" alt="">
+            </div>
+            <div class="icon-container">
+              <a href="#"></a>
+              <img src="../pic/header/watsapp-menu.svg" alt="">
+            </div>
+            <div class="icon-container">
+              <a href="#"></a>
+              <img src="../pic/header/instagram-menu.svg" alt="">
             </div>
           </div>
+        </div>
+
+
       </div>
-
+      </div>
     </header>
 
     <!-- Тело страницы -->
@@ -639,6 +674,6 @@
 
 
 
-    <script src="script.js" charset="utf-8"></script>
+    <script src="../common/script.js" charset="utf-8"></script>
   </body>
 </html>

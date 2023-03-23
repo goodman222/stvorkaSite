@@ -9,9 +9,9 @@
     <link rel="stylesheet" href="../common/header-footer-adaptive.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="adaptive.css">
-    <title>Створка</title>
+    <title>Створка | Каталог</title>
   </head>
-  <body>
+  <body class="">
     <!-- Header -->
     <header class="header">
       <div class="header_line first-line">
@@ -78,57 +78,92 @@
       </div>
 
       <!-- Вторая линия -->
-      <div class="header_line grey-line">
+      <img class="menu-close-button" src="../pic/header/x.svg" alt="">
+      <div class="menu-container">
 
-          <div class="catalog-button">
-            <div class="catalog-logo-container">
-              <div class="catalog-logo-line"></div>
-              <div class="catalog-logo-line"></div>
-              <div class="catalog-logo-line"></div>
-            </div>
-            <a href="index.html">Весь каталог</a>
-          </div>
+        <div class="header_line grey-line">
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_1.svg" alt="">
+            <div class="catalog-button">
+              <div class="catalog-logo-container">
+                <div class="catalog-logo-line"></div>
+                <div class="catalog-logo-line"></div>
+                <div class="catalog-logo-line"></div>
+              </div>
+              <a href="../catalog/index.html">Весь каталог</a>
             </div>
-            <div class="header-item-text">
-              <a href="#">Межкомнатные двери</a>
+            <a class="menu-catalog-link" href="../catalog/index.html">Каталог</a>
+            <div class="header-item-container second-line-item">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_1.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Межкомнатные двери</a>
+              </div>
             </div>
-          </div>
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_2.svg" alt="">
+            <div class="header-item-container second-line-item">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_2.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Входные двери</a>
+              </div>
             </div>
-            <div class="header-item-text">
-              <a href="#">Входные двери</a>
-            </div>
-          </div>
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_3.svg" alt="">
+            <div class="header-item-container">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_3.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Дверная фурнитура</a>
+              </div>
             </div>
-            <div class="header-item-text">
-              <a href="#">Дверная фурнитура</a>
-            </div>
-          </div>
 
-          <div class="header-item-container second-line-item">
-            <div class="header-item-logo second-line-logo">
-              <img class="header-item-logo__img"src="../pic/header/door_4.svg" alt="">
+            <div class="header-item-container second-line-item">
+              <div class="header-item-logo second-line-logo">
+                <img class="header-item-logo__img"src="../pic/header/door_4.svg" alt="">
+              </div>
+              <div class="header-item-text">
+                <a href="#">Дверной погонаж</a>
+              </div>
             </div>
-            <div class="header-item-text">
-              <a href="#">Дверной погонаж</a>
+        </div>
+
+        <div class="menu-extra-items">
+        <a href="#">Новости</a>
+        <a href="#">Контакты</a>
+        <div class="header-item-container phone-container">
+          <div class="header-item-logo">
+            <img class="header-item-logo__img"src="../pic/header/logo_phone.svg" alt="">
+          </div>
+          <div class="header-item-text">
+            <a class="phone-number-text" href="#">8 923 486 68 16</a>
+          </div>
+        </div>
+        <div class="footer-item social-container">
+          <p class="footer-headline" href="#">ПРИСОЕДИНЯЙТЕСЬ К НАМ</p>
+          <div class="social-icon">
+            <div class="icon-container">
+              <a href="#"></a>
+              <img src="../pic/header/telegram-menu.svg" alt="">
+            </div>
+            <div class="icon-container">
+              <a href="#"></a>
+              <img src="../pic/header/watsapp-menu.svg" alt="">
+            </div>
+            <div class="icon-container">
+              <a href="#"></a>
+              <img src="../pic/header/instagram-menu.svg" alt="">
             </div>
           </div>
+        </div>
+
+
       </div>
-
+      </div>
     </header>
 
-    <div class="page-container">
+    <div class="page-container ">
       <div class="content-container">
         <div class="navigation">
           <a href="../main-page/index.html">Главная</a> / <a href="index.html">Каталог</a>
@@ -137,12 +172,19 @@
         <h1>Каталог</h1>
 
         <div class="string">
+          <div class="filter-open-container">
+            <div class="filter-open-button">
+              <img class="filter-icon" src="../pic/catalog/filter-icon.svg" alt="">
+              <p>Параметры фильтра</p>
+            </div>
+            <img class="close-icon" src="../pic/catalog/x.svg" alt="">
+          </div>
           <h2>Фильтр</h2>
           <div class="sorting">
             <p>Сортировка</p>
             <div class="sorting-dropdown">
               <p>по популярности</p>
-              <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+              <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
             </div>
           </div>
         </div>
@@ -189,10 +231,10 @@
 
               <div class="dropdown-header">
                 <h1>Цена (руб)</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
-              <div class="dropdown-content">
+              <div class="dropdown-content dropdown-price">
 
                 <div class="price-input">
                   <input type="text" name="" value="">
@@ -214,7 +256,7 @@
 
               <div class="dropdown-header">
                 <h1>Цвет</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
               <div class="dropdown-content">
@@ -279,16 +321,16 @@
                   <p></p>
                 </div>
 
-                <a href="#">Показать все</a>
 
               </div>
+              <a href="#">Показать все</a>
             </div>
 
             <div class="filter-dropdown"><!--Тип полотна-->
 
               <div class="dropdown-header">
                 <h1>Тип полотна</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
               <div class="dropdown-content">
@@ -320,7 +362,7 @@
 
               <div class="dropdown-header">
                 <h1>Покрытие</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
               <div class="dropdown-content">
@@ -375,16 +417,16 @@
                   <p><!--Число--></p>
                 </div>
 
-                <a href="#">Показать все</a>
-
               </div>
+              <a href="#">Показать все</a>
+
             </div>
 
             <div class="filter-dropdown dropdown-closed"><!--Количество створок-->
 
               <div class="dropdown-header">
                 <h1>Количество створок</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
               <div class="dropdown-content">
@@ -417,7 +459,7 @@
 
               <div class="dropdown-header">
                 <h1>Бренд</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
               <div class="dropdown-content">
@@ -479,7 +521,7 @@
 
               <div class="dropdown-header">
                 <h1>Размеры</h1>
-                <img src="../pic/catalog/dropdown_arrow.svg" alt="">
+                <img class="dropdown-icon" src="../pic/catalog/dropdown_arrow.svg" alt="">
               </div>
 
               <div class="dropdown-content">
@@ -519,258 +561,310 @@
 
             <div class="filter-button">
               <button type="button" name="button">Найти</button>
-              <button class="grey-buton" type="button" name="button">Сброс</button>
+              <button class="grey-button" type="button" name="button">Сброс</button>
             </div>
 
 
           </div><!--/фильтр-->
 
-          <div class="catalog-grid">
 
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+          <div class="catalog">
 
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
+            <div class="catalog-grid">
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
               </div>
 
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
               </div>
 
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
               </div>
 
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
               </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/catalog/door-active.png" alt="">
+
+                <div class="catalog-header">
+                  <p>Вена Глянец стекло матовое</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+              <div class="catalog-item catalog-item-1">
+                <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+
+                <div class="catalog-header">
+                  <p>РИМ Vinil Серый</p>
+                </div>
+
+                <div class="catalog-description">
+                  <p>Дверь межкомнатная</p>
+                </div>
+
+                <div class="catalog-price">
+                  <p>5 600 руб.</p>
+                </div>
+
+                <div class="catalog-more-button">
+                  <a href="#">Подробнее</a>
+                </div>
+              </div>
+
+
             </div>
 
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
+            <button type="button" name="button">Показать еще</button>
 
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
+            <div class="catalog-navigation">
+
+              <img src="../pic/catalog/nav-left.svg" alt="">
+              <a class="previous-page" href="#">Предыдущая страница</a>
+
+              <div class="navigation-numbers">
+                <a class="active-page" href="#">1</a>
+                <a href="#">2</a>
+                <a href="#">3</a>
               </div>
 
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
+              <a href="#">Предыдущая страница</a>
 
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
+              <img src="../pic/catalog/nav-right.svg" alt="">
 
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
+
             </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/catalog/door-active.png" alt="">
-
-              <div class="catalog-header">
-                <p>Вена Глянец стекло матовое</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
-            <div class="catalog-item catalog-item-1">
-              <img class="catalog-pic" src="../pic/main-page/door1.jpg" alt="">
-
-              <div class="catalog-header">
-                <p>РИМ Vinil Серый</p>
-              </div>
-
-              <div class="catalog-description">
-                <p>Дверь межкомнатная</p>
-              </div>
-
-              <div class="catalog-price">
-                <p>5 600 руб.</p>
-              </div>
-
-              <div class="catalog-more-button">
-                <a href="#">Подробнее</a>
-              </div>
-            </div>
-
 
           </div>
+
         </div>
 
+        <div class="info-block">
+
+          <div class="info-item">
+            <img src="../pic/catalog/info1.svg" alt="">
+
+            <h1>Доставка</h1>
+            <p>Доставка может быть осуществлена как до подъезда, так и с подъемом на этаж</p>
+          </div>
+
+          <div class="info-item">
+            <img src="../pic/catalog/info2.svg" alt="">
+
+            <h1>Установка</h1>
+
+            <p>Наши монтажники имеют опыт установки от 5 лет. Умеют работать с различными система открывания</p>
+          </div>
+
+          <div class="info-item">
+            <img src="../pic/catalog/info3.svg" alt="">
+
+            <h1>Гарантия</h1>
+
+            <p>Предоставляем гарантию на 12 месяцев на продукцию с нашего сайта и установку</p>
+          </div>
+
+        </div>
 
 
 
@@ -894,6 +988,7 @@
 
     </footer>
 
+    <script src="../common/script.js" charset="utf-8"></script>
     <script src="script.js" charset="utf-8"></script>
   </body>
 </html>

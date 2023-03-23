@@ -11,6 +11,19 @@ header {
           align-items: center;
 }
 
+.menu-extra-items {
+  display: none;
+}
+
+.menu-catalog-link, .menu-close-button {
+  display: none;
+}
+
+.menu-container {
+  width: 100%;
+}
+
+
 .header_line {
   display: -webkit-box;
   display: -ms-flexbox;
