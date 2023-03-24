@@ -77,6 +77,7 @@ h2 {
   height: 49px;
   width: 354px;
   margin-right: 110px;
+  cursor: pointer;
 }
 
 .close-icon {
@@ -175,6 +176,7 @@ h3 {
   display: flex;
   flex-direction: row;
   align-items: center;
+  cursor: pointer;
 }
 
 

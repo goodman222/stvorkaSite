@@ -1,3 +1,8 @@
+p, a, div, h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -13,7 +13,6 @@ document.querySelector('.close-icon').onclick = function () {
 
 document.querySelector('.filter').addEventListener('click', function (event) {
   let target = event.target;
-  console.log(target);
   let isItIcon = target.classList.contains('dropdown-icon');
   let isItCheckBox = target.parentNode.parentNode.classList.contains('check-box');
   if (isItIcon) {
