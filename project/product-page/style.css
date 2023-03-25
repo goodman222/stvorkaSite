@@ -217,6 +217,10 @@ p, a, div, h1, h2 {
   align-self: center;
 }
 
+.price-sum {
+  font-size: 20px!important;
+}
+
 .price-item p {
   font-size: 14px;
 }
@@ -224,6 +228,8 @@ p, a, div, h1, h2 {
 .price-sum, .amount p {
   font-size: 16px;
 }
+
+
 
 .total-sum-container p {
   font-size: 20px;
