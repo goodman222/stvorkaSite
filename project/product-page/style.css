@@ -206,6 +206,23 @@ p, a, div, h1, h2 {
   grid-area: D;
 }
 
+.color-option .check-box-active .brown {
+  background-color: #BF9D5B;
+}
+
+.color-option .check-box-active .grey {
+  background-color: #8D8A84;
+}
+
+.color-option .check-box-active .black {
+  background-color: #595146;
+}
+
+.check-box {
+  cursor: pointer;
+}
+
+
 
 /* Блок с суммой */
 
@@ -389,6 +406,7 @@ p, a, div, h1, h2 {
 
 .content-switcher div {
   font-size: 20px;
+  cursor: pointer;
 }
 
 .active-switcher {
