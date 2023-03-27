@@ -1,0 +1,326 @@
+p, a, div, h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #413E3A;
+  font-weight: 500;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 1420px;
+}
+
+.navigation a, .navigation {
+  color: #817E7A;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navigation {
+  margin-bottom: 35px;
+  margin-top: 30px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+/* Строчка с этапами */
+
+.string {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+.stages-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stages-container p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #C4C4C4;
+  margin-right: 10px;
+}
+
+.stages-container p:last-child {
+  margin-right: 0px;
+}
+
+.stages-container .active {
+  color: #413E3A;
+}
+
+.clear-button {
+  width: 220px;
+  height: 36px;
+  border: solid #C4C4C4 1px;
+  color: #C4C4C4;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Кнопки количества, сумма */
+.price-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* margin-bottom: 18px; */
+}
+
+.amount {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 69px;
+  height: 24px;
+}
+
+.amount-button {
+  width: 24px;
+  height: 24px;
+  border: solid 1px #BF9D5B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.price-sum, .amount p {
+  font-size: 16px;
+}
+
+
+/* Сетка товара */
+
+.cart-item {
+  display: grid;
+  grid-template-areas:
+  "table-a X X table-b table-c table-d X1"
+  "line-a line-a line-a line-a line-a line-a line-a"
+  "X2 pic X3 X3 X3 X3 X3"
+  "X2 pic header amount cost sum close"
+  "X2 pic info X4 X4 X4 X4"
+  "line-b line-b line-b line-b line-b line-b line-b"
+  "X5 X5 X5 total-text total-text total-sum X6";
+  grid-template-columns: 65px 175px 720px 123px 123px 160px;
+  grid-template-rows: 25px 35px 50px 46px 132px 1px auto;
+  /* margin-top: 65px; */
+}
+
+.table-product {
+  grid-area: table-a;
+}
+
+.table-number {
+  grid-area: table-b;
+}
+
+.table-cost {
+  grid-area: table-c;
+}
+
+.table-sum {
+  grid-area: table-d;
+}
+
+.item-pic {
+  grid-area: pic;
+}
+
+.item-header {
+  grid-area: header;
+}
+
+.amount {
+  grid-area: amount;
+}
+
+.item-cost {
+  grid-area: cost;
+}
+
+.item-sum {
+  grid-area: sum;
+}
+
+.item-close {
+  grid-area: close;
+}
+
+.item-info {
+  grid-area: info;
+}
+
+.total-sum-text {
+  grid-area: total-text;
+}
+
+.total-sum {
+  grid-area: total-sum;
+}
+
+.line-top {
+  grid-area: line-a;
+}
+.line-bottom {
+  grid-area: line-b;
+}
+
+/* Информация о товаре */
+
+.item-info {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  /* width: 557px; */
+  height: 41px;
+}
+
+.info-element {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+
+/*  */
+.in-stock {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Шрифты */
+
+.table {
+  font-size: 14px;
+  font-weight: 500;
+  color: #C4C4C4;
+}
+
+.item-header h1 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.in-stock p {
+  color: #6FCF97;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  margin-left: 7px;
+
+}
+
+.info-element p {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.amount p, .item-cost, .total-sum-text {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.item-sum {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.total-sum {
+  font-size: 24px;
+  font-weight: 600;
+  height: 50px;
+  padding-top: 24px;
+}
+/* /шрифты */
+/* полосы */
+
+.line-bottom, .line-top {
+  border-top: 1px solid #E0E0E0;
+}
+
+/* Позиционирование */
+.item-header {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-between;
+}
+
+.item-info {
+  margin-top: 25px;
+  height: 36px;
+  justify-content: space-between;
+}
+
+.info-color {
+  width: 15px;
+  height: 15px;
+  background-color: #BF9D5B;
+}
+
+.info-element p {
+  margin-right: 8px;
+}
+
+.total-sum-text, .total-sum {
+  align-self: end;
+}
+
+
+
+.table, .line-top, .total-sum, .total-sum-text {
+  display: none;
+}
+
+
+.cart-item:first-child .table,
+.cart-item:first-child .line-top {
+  display: block;
+}
+
+.cart-item:last-child .total-sum,
+.cart-item:last-child .total-sum-text  {
+  display: block;
+}
+
+/* Кнопки */
+
+.button-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 35px;
+  margin-bottom: 120px;
+}
+
+.button-container button {
+  width: 220px;
+  height: 52px;
+  background-color: #BF9D5B;
+  color: #FFFFFF;
+}
+
+.grey-button {
+  background-color: #C4C4C4!important;
+}
+
+
+/*  */

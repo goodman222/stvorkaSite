@@ -1,0 +1,281 @@
+@media (min-width: 1000px) and (max-width: 1920px) {
+
+  .content-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  .cart-item {
+    grid-template-columns: 14.2% 41.8% 12.7% 13% 13.3% 4.8%;
+    width: 100%;
+    grid-template-areas:
+      "table-a X table-b table-c table-d X1"
+      "line-a line-a line-a line-a line-a line-a"
+      "pic X3 X3 X3 X3 X3"
+      "pic header amount cost sum close"
+      "pic info X4 X4 X4 X4"
+      "line-b line-b line-b line-b line-b line-b"
+      "X5 X5 total-text total-text total-sum X6";
+    }
+
+    .item-info {
+      height: 64px;
+    }
+  }
+
+
+  @media (min-width: 768px) and (max-width: 1000px) {
+
+    .content-container {
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .cart-item {
+      grid-template-columns: 16.4% 36.2% 14.9% 13.3% 16.8% 4.8%;
+      grid-template-rows: 24px 31px 2px 58px 152px 1px auto;
+      width: 100%;
+      grid-template-areas:
+        "table-a X table-b table-c table-d X1"
+        "line-a line-a line-a line-a line-a line-a"
+        "pic X3 X3 X3 X3 X3"
+        "pic header amount cost sum close"
+        "pic info X4 X4 X4 X4"
+        "line-b line-b line-b line-b line-b line-b"
+        "X5 X5 total-text total-text total-sum X6";
+
+      }
+
+      .item-info {
+        height: 123px;
+        margin-top: 14px;
+      }
+
+
+      /* Шрифты */
+
+      .item-header h1 {
+        font-size: 18px;
+      }
+      .in-stock p {
+        font-size: 10px;
+      }
+
+      .info-element p {
+        font-size: 13px;
+      }
+      /* /шрифты */
+
+    }
+
+    @media (min-width: 480px) and (max-width: 768px) {
+
+      .content-container {
+        width: 100%;
+        padding: 0 20px;
+      }
+
+      .cart-item {
+        grid-template-columns: 24% 23.6% 39.3% 14.7% auto;
+        grid-template-rows: 20px 30px 40px 100px 45px 50px 30px auto;
+        width: 100%;
+        grid-template-areas:
+            "table-a X X X X"
+            "line-a line-a line-a line-a line-a"
+            "pic header header header X2"
+            "pic info info X4 X4"
+            "X5  info info X4 X4"
+            "amount cost sum close X7"
+            "line-b line-b line-b line-b line-b"
+            "total-text total-text total-sum total-sum X6";
+        }
+
+        .item-info {
+          height: 123px;
+          margin-top: 14px;
+        }
+
+        .item-close {
+          align-self: end;
+        }
+
+        .string {
+          flex-direction: column;
+          align-items: flex-start;
+          margin-bottom: 20px;
+        }
+
+        .line-bottom {
+            border-top: none;
+            border-bottom: solid 1px #E0E0E0;
+        }
+
+        .stages-container {
+          margin-bottom: 20px;
+        }
+
+        .table-number, .table-cost, .table-sum {
+          display: none!important;
+        }
+
+        .amount, .item-cost, .item-sum {
+          align-self: end;
+        }
+
+        .button-container button {
+          width: 210px;
+        }
+
+        /* Шрифты */
+
+        h1 {
+          font-size: 32px;
+        }
+
+        .stages-container p {
+          font-size: 13px;
+        }
+
+        .item-header h1 {
+          font-size: 16px;
+        }
+        .in-stock p {
+          font-size: 10px;
+        }
+
+        .info-element p {
+          font-size: 13px;
+        }
+        /* /шрифты */
+
+      }
+
+
+      @media (max-width: 480px) {
+
+        .content-container {
+          width: 100%;
+          padding: 0 20px;
+        }
+
+        .cart-item {
+          grid-template-columns: 32.1% 10% 29.6% 20.7% auto;
+          grid-template-rows: 20px 30px 70px 136px  70px 1px 10px;
+          /* !!! */
+          width: 100%;
+
+          grid-template-areas:
+              "table-a X X X X"
+              "line-a line-a line-a line-a line-a"
+              "pic header header header X2"
+              "pic info info info X4"
+              "X5  info info info X4"
+              "amount sum sum X7 close"
+              "line-b line-b line-b line-b line-b"
+              "total-text total-text X6 total-sum total-sum";
+          }
+
+          .item-info {
+            height: 140px;
+            margin-top: 14px;
+          }
+
+          .item-close {
+            align-self: end;
+          }
+
+          .string {
+            flex-direction: column;
+            align-items: flex-start;
+            margin-bottom: 20px;
+          }
+
+          .line-bottom {
+              border-top: none;
+              border-bottom: solid 1px #E0E0E0;
+          }
+
+          .stages-container {
+            margin-bottom: 20px;
+          }
+
+          .table-number, .table-cost, .table-sum, .item-cost {
+            display: none!important;
+          }
+
+          .amount, .item-cost, .item-sum {
+            align-self: end;
+          }
+
+          .button-container {
+            flex-direction: column;
+          }
+
+          .button-container button {
+            width: 100%;
+          }
+
+          .grey-button {
+            margin-bottom: 25px;
+          }
+
+          .item-pic img  {
+            width: 67px;
+            height: 140px;
+          }
+
+          .stages-container {
+            flex-wrap: wrap;
+            justify-content: flex-start;
+          }
+
+
+          /* Шрифты */
+
+          h1 {
+            font-size: 32px;
+          }
+
+          .stages-container p {
+            font-size: 13px;
+          }
+
+          .item-header h1 {
+            font-size: 16px;
+          }
+          .in-stock p {
+            font-size: 10px;
+          }
+
+          .info-element p {
+            font-size: 13px;
+          }
+
+          .total-sum {
+            font-size: 18px;
+          }
+          /* /шрифты */
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
