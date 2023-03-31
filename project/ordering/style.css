@@ -1,0 +1,283 @@
+p, a, div, h1, h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #413E3A;
+  font-weight: 500;
+}
+
+h2 {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+p {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 1420px;
+}
+
+.navigation a, .navigation {
+  color: #817E7A;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.navigation {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+h1 {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.string {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 65px;
+}
+
+.stages-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stages-container p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #C4C4C4;
+  margin-right: 10px;
+}
+
+.stages-container p:last-child {
+  margin-right: 0px;
+}
+
+.stages-container .active {
+  color: #413E3A;
+}
+
+
+/* Чек-боксы */
+
+.check-mark {
+  width: 15px;
+  height: 15px;
+  border: #EDEDED solid 1px;
+  border-radius: 7.5px;
+  background-color: #FBFBFB;
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mark-circle {
+  width: 5px;
+  height: 5px;
+  border-radius: 2.5px;
+  background-color: #FBFBFB;
+}
+
+.check-mark .mark-circle{
+  display: none;
+}
+
+.check-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.check-box-active .mark-circle {
+  display: block;
+}
+
+.check-box-active .check-mark {
+  border: none;
+  background-color: #BF9D5B;
+}
+
+.check-box-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+}
+
+
+/* Кнопки */
+
+.button-container {
+  /* width: 100%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 35px;
+  margin-bottom: 120px;
+}
+
+.button-container .button {
+  width: 220px;
+  height: 52px;
+  background-color: #BF9D5B;
+  color: #FFFFFF;
+}
+
+.grey-button {
+  background-color: #C4C4C4!important;
+  margin-right: 20px;
+}
+
+/* формы */
+
+.content-container input[type = text], .content-container input[type = tel], textarea {
+  width: 340px;
+  height: 40px;
+  border: 1px solid #C4C4C4;
+  margin-bottom: 30px;
+  padding: 0px 5px;
+}
+
+textarea {
+  resize: none;
+}
+
+.comment-form {
+  height: 105px!important;
+}
+
+/* Отступы */
+
+form h2 {
+  margin-bottom: 20px;
+}
+
+form p {
+  /* margin-bottom: 5px; */
+}
+
+.check-box-container  {
+  display: flex;
+  flex-direction: row;
+}
+
+.check-box-container>p {
+  margin-right: 56px;
+}
+
+.check-box-item p {
+  margin-right: 25px;
+}
+
+/* Карточка корзины */
+
+.cart-container {
+  width: 461px;
+  border: 1px solid #C4C4C4;
+  height: auto;
+}
+
+.cart-item {
+  padding: 0px 23px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 121px;
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.cart-text-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item-name {
+  width: 120px;
+}
+
+.num {
+  margin-right: 125px;
+}
+
+.cart-item .item-sum {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.cart-item p {
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.cart-sum {
+  padding: 0px 23px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 45px;
+}
+
+.cart-sum p {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.cart-sum h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.order-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  */
