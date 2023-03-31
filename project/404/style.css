@@ -1,0 +1,57 @@
+.page-container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 1420px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.content-container h1 {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 45px;
+  color: #595146;
+  margin-bottom: 11px;
+}
+
+.content-container p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #595146;
+}
+
+.text-container>p{
+  margin-bottom: 30px;
+}
+
+.thank-button {
+  width: 217px;
+  height: 52px;
+  background-color: #BF9D5B;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.thank-button p {
+  color: #FFFFFF;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.thank-button a {
+  display: block;
+  position: absolute;
+  width: 217px;
+  height: 52px;
+}
