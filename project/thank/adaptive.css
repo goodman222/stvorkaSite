@@ -1,0 +1,23 @@
+@media (min-width: 480px) and (max-width: 768px) {
+
+  .content-container {
+    width: 92%;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .content-container {
+    width: 92%;
+    height: 210px;
+    padding: 50px 0px;
+  }
+
+  h1 {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+}
