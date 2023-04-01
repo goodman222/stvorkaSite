@@ -6,9 +6,10 @@
   }
 
   .cart-item {
+    -ms-grid-columns: 14.2% 41.8% 12.7% 13% 13.3% 4.8%;
     grid-template-columns: 14.2% 41.8% 12.7% 13% 13.3% 4.8%;
     width: 100%;
-    grid-template-areas:
+        grid-template-areas:
       "table-a X table-b table-c table-d X1"
       "line-a line-a line-a line-a line-a line-a"
       "pic X3 X3 X3 X3 X3"
@@ -32,10 +33,12 @@
     }
 
     .cart-item {
+      -ms-grid-columns: 16.4% 36.2% 14.9% 13.3% 16.8% 4.8%;
       grid-template-columns: 16.4% 36.2% 14.9% 13.3% 16.8% 4.8%;
+      -ms-grid-rows: 24px 31px 2px 58px 152px 1px auto;
       grid-template-rows: 24px 31px 2px 58px 152px 1px auto;
       width: 100%;
-      grid-template-areas:
+          grid-template-areas:
         "table-a X table-b table-c table-d X1"
         "line-a line-a line-a line-a line-a line-a"
         "pic X3 X3 X3 X3 X3"
@@ -76,10 +79,12 @@
       }
 
       .cart-item {
+        -ms-grid-columns: 24% 23.6% 39.3% 14.7% auto;
         grid-template-columns: 24% 23.6% 39.3% 14.7% auto;
+        -ms-grid-rows: 20px 30px 40px 100px 45px 50px 30px auto;
         grid-template-rows: 20px 30px 40px 100px 45px 50px 30px auto;
         width: 100%;
-        grid-template-areas:
+            grid-template-areas:
             "table-a X X X X"
             "line-a line-a line-a line-a line-a"
             "pic header header header X2"
@@ -96,12 +101,19 @@
         }
 
         .item-close {
-          align-self: end;
+          -ms-flex-item-align: end;
+              -ms-grid-row-align: end;
+              align-self: end;
         }
 
         .string {
-          flex-direction: column;
-          align-items: flex-start;
+          -webkit-box-orient: vertical;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: column;
+                  flex-direction: column;
+          -webkit-box-align: start;
+              -ms-flex-align: start;
+                  align-items: flex-start;
           margin-bottom: 20px;
         }
 
@@ -119,7 +131,9 @@
         }
 
         .amount, .item-cost, .item-sum {
-          align-self: end;
+          -ms-flex-item-align: end;
+              -ms-grid-row-align: end;
+              align-self: end;
         }
 
         .button-container button {
@@ -159,12 +173,14 @@
         }
 
         .cart-item {
+          -ms-grid-columns: 32.1% 10% 29.6% 20.7% auto;
           grid-template-columns: 32.1% 10% 29.6% 20.7% auto;
+          -ms-grid-rows: 20px 30px 70px 136px  70px 1px 10px;
           grid-template-rows: 20px 30px 70px 136px  70px 1px 10px;
           /* !!! */
           width: 100%;
 
-          grid-template-areas:
+              grid-template-areas:
               "table-a X X X X"
               "line-a line-a line-a line-a line-a"
               "pic header header header X2"
@@ -181,12 +197,19 @@
           }
 
           .item-close {
-            align-self: end;
+            -ms-flex-item-align: end;
+                -ms-grid-row-align: end;
+                align-self: end;
           }
 
           .string {
-            flex-direction: column;
-            align-items: flex-start;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            -webkit-box-align: start;
+                -ms-flex-align: start;
+                    align-items: flex-start;
             margin-bottom: 20px;
           }
 
@@ -204,11 +227,16 @@
           }
 
           .amount, .item-cost, .item-sum {
-            align-self: end;
+            -ms-flex-item-align: end;
+                -ms-grid-row-align: end;
+                align-self: end;
           }
 
           .button-container {
-            flex-direction: column;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
           }
 
           .button-container button {
@@ -225,8 +253,11 @@
           }
 
           .stages-container {
-            flex-wrap: wrap;
-            justify-content: flex-start;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: start;
+                -ms-flex-pack: start;
+                    justify-content: flex-start;
           }
 
 
@@ -257,25 +288,3 @@
           /* /шрифты */
 
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}

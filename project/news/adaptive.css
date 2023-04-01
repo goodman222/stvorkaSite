@@ -21,17 +21,81 @@
   }
 
   .news-container .items-container {
+    -ms-grid-columns: 49% 49%;
     grid-template-columns: 49% 49%;
+    -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     justify-items: center;
     margin-bottom: 120px;
   }
 
+  .news-container .items-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .news-container .items-container > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
   .articles-container .items-container {
+    -ms-grid-columns: 49% 49%;
     grid-template-columns: 49% 49%;
+    -ms-grid-rows: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     justify-items: center;
     margin-bottom: 120px;
+  }
+
+  .articles-container .items-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .articles-container .items-container > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .articles-container .items-container > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+
+  .articles-container .items-container > *:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
   }
 
 }
@@ -59,17 +123,81 @@
   }
 
   .news-container .items-container {
+    -ms-grid-columns: 49% 49%;
     grid-template-columns: 49% 49%;
+    -ms-grid-rows: auto auto;
     grid-template-rows: auto auto;
     justify-items: center;
     margin-bottom: 120px;
   }
 
+  .news-container .items-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .news-container .items-container > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
   .articles-container .items-container {
+    -ms-grid-columns: 49% 49%;
     grid-template-columns: 49% 49%;
+    -ms-grid-rows: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     justify-items: center;
     margin-bottom: 120px;
+  }
+
+  .articles-container .items-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(2) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+
+  .articles-container .items-container > *:nth-child(3) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+  }
+
+  .articles-container .items-container > *:nth-child(5) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+  }
+
+  .articles-container .items-container > *:nth-child(7) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(8) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 2;
   }
 
 }
@@ -97,17 +225,81 @@
   }
 
   .news-container .items-container {
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
+    -ms-grid-rows: auto auto auto auto;
     grid-template-rows: auto auto auto auto;
     justify-items: center;
     margin-bottom: 120px;
   }
 
+  .news-container .items-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .news-container .items-container > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
   .articles-container .items-container {
+    -ms-grid-columns: 100%;
     grid-template-columns: 100%;
+    -ms-grid-rows: (auto)[8];
     grid-template-rows: repeat(8, auto);
     justify-items: center;
     margin-bottom: 120px;
+  }
+
+  .articles-container .items-container > *:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(2) {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(3) {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(4) {
+    -ms-grid-row: 4;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(5) {
+    -ms-grid-row: 5;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(6) {
+    -ms-grid-row: 6;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(7) {
+    -ms-grid-row: 7;
+    -ms-grid-column: 1;
+  }
+
+  .articles-container .items-container > *:nth-child(8) {
+    -ms-grid-row: 8;
+    -ms-grid-column: 1;
   }
 
   .news-item h2 {

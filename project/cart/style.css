@@ -6,10 +6,19 @@ p, a, div, h1, h2 {
 
 .page-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .content-container {
@@ -35,20 +44,38 @@ h1 {
 /* Строчка с этапами */
 
 .string {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   margin-top: 30px;
   margin-bottom: 65px;
 }
 
 .stages-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .stages-container p {
@@ -77,18 +104,36 @@ h1 {
 
 /* Кнопки количества, сумма */
 .price-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     /* margin-bottom: 18px; */
 }
 
 .amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 69px;
   height: 24px;
 }
@@ -97,9 +142,15 @@ h1 {
   width: 24px;
   height: 24px;
   border: solid 1px #BF9D5B;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .price-sum, .amount p {
@@ -110,8 +161,9 @@ h1 {
 /* Сетка товара */
 
 .cart-item {
+  display: -ms-grid;
   display: grid;
-  grid-template-areas:
+      grid-template-areas:
   "table-a X X table-b table-c table-d X1"
   "line-a line-a line-a line-a line-a line-a line-a"
   "X2 pic X3 X3 X3 X3 X3"
@@ -119,91 +171,144 @@ h1 {
   "X2 pic info X4 X4 X4 X4"
   "line-b line-b line-b line-b line-b line-b line-b"
   "X5 X5 X5 total-text total-text total-sum X6";
+  -ms-grid-columns: 65px 175px 720px 123px 123px 160px;
   grid-template-columns: 65px 175px 720px 123px 123px 160px;
+  -ms-grid-rows: 25px 35px 50px 46px 132px 1px auto;
   grid-template-rows: 25px 35px 50px 46px 132px 1px auto;
   /* margin-top: 65px; */
 }
 
 .table-product {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
   grid-area: table-a;
 }
 
 .table-number {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
   grid-area: table-b;
 }
 
 .table-cost {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
   grid-area: table-c;
 }
 
 .table-sum {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
   grid-area: table-d;
 }
 
 .item-pic {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
   grid-area: pic;
 }
 
 .item-header {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
   grid-area: header;
 }
 
 .amount {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
   grid-area: amount;
 }
 
 .item-cost {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
   grid-area: cost;
 }
 
 .item-sum {
+  -ms-grid-row: 4;
+  -ms-grid-column: 6;
   grid-area: sum;
 }
 
 .item-close {
+  -ms-grid-row: 4;
+  -ms-grid-column: 7;
   grid-area: close;
 }
 
 .item-info {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
   grid-area: info;
 }
 
 .total-sum-text {
+  -ms-grid-row: 7;
+  -ms-grid-column: 4;
+  -ms-grid-column-span: 2;
   grid-area: total-text;
 }
 
 .total-sum {
+  -ms-grid-row: 7;
+  -ms-grid-column: 6;
   grid-area: total-sum;
 }
 
 .line-top {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
   grid-area: line-a;
 }
 .line-bottom {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 7;
   grid-area: line-b;
 }
 
 /* Информация о товаре */
 
 .item-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   /* width: 557px; */
   height: 41px;
 }
 
 .info-element {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 
 /*  */
 .in-stock {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 /* Шрифты */
@@ -258,15 +363,24 @@ h1 {
 /* Позиционирование */
 .item-header {
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content:space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack:justify;
+      -ms-flex-pack:justify;
+          justify-content:space-between;
 }
 
 .item-info {
   margin-top: 25px;
   height: 36px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .info-color {
@@ -280,7 +394,9 @@ h1 {
 }
 
 .total-sum-text, .total-sum {
-  align-self: end;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
 }
 
 
@@ -304,9 +420,16 @@ h1 {
 
 .button-container {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-top: 35px;
   margin-bottom: 120px;
 }

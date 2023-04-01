@@ -6,7 +6,9 @@
   }
 
   .button-container {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
@@ -18,7 +20,9 @@
   }
 
   .button-container {
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 
 
@@ -27,7 +31,8 @@
   }
 
   .cart-text-container {
-    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     height: 70px;
     margin-left: 5px;
   }
@@ -46,7 +51,10 @@
   }
 
   .button-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   h1 {
@@ -70,7 +78,10 @@
   }
 
   .order-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .content-container input[type = text], .content-container input[type = tel],   textarea {
@@ -87,7 +98,10 @@
   }
 
   .check-box-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .button-container .button {
@@ -109,7 +123,10 @@
   }
 
   .button-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   h1 {
@@ -133,7 +150,10 @@
   }
 
   .order-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .content-container input[type = text], .content-container input[type = tel],   textarea {
@@ -150,7 +170,10 @@
   }
 
   .check-box-container {
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 
   .button-container .button {
@@ -166,8 +189,11 @@
   }
 
   .stages-container {
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 
 }
