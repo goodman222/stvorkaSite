@@ -1,0 +1,93 @@
+
+
+
+.pop-up-container {
+  width: 522px;
+  height: 488px;
+  background-color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 10%;
+  left: 30%;
+  z-index: 100;
+}
+
+.pop-up-frame {
+  position: relative;
+  width: 451px;
+  height: 421px;
+  background: rgba(200, 191, 179, 0.15);
+  border: 1px solid #BF9D5B;
+  padding: 34px 34px 55px 31px;
+}
+
+.pop-up-close {
+  position: absolute;
+  right: 5%;
+  bottom: 91%;
+}
+
+.pop-up-frame h1 {
+  font-weight: 500;
+  font-size: 30px;
+  color: #413E3A;
+  width: 300px;
+  margin-bottom: 40px;
+}
+
+form {
+  height: 215px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+input[type='text'], input[type='tel'] {
+  width: 100%;
+  height: 50px;
+  border: 1px solid #C4C4C4;
+  border-radius: 3px;
+  color: #817E7A;
+  padding-left: 10px;
+}
+
+input[type='submit'] {
+  background: #BF9D5B;
+  border-radius: 3px;
+  width: 100%;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+/* ///////////// */
+
+.thank-pop-up .pop-up-frame {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.thank-pop-up p {
+  width: 180px;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+
+.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+/*  */
