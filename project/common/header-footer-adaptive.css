@@ -26,8 +26,10 @@
   .grey-line {
     width: 100%;
     /* padding-right: 20px; */
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
-  }
+}
 
   .second-line-item {
     /* margin-left: 50px; */
