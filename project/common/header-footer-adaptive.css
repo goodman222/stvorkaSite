@@ -1,4 +1,4 @@
-@media (min-width: 1000px) and (max-width: 1919px) {
+@media (min-width: 1000px) and (max-width: 1920px) {
 
   .header_line, header {
     min-width: 100%;
@@ -25,15 +25,17 @@
 
   .grey-line {
     width: 100%;
-    padding-right: 20px;
+    /* padding-right: 20px; */
+    justify-content: flex-start;
   }
 
   .second-line-item {
-    margin-left: 50px;
+    /* margin-left: 50px; */
   }
 
   .catalog-button {
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    margin-right: 0px;
     padding: 0px 6px;
   }
 
@@ -84,10 +86,37 @@
   .down-text {
     margin: 0;
   }
+
+
 }
 
 
-@media (min-width: 768px) and (max-width: 999px) {
+@media (min-width: 1000px) and (max-width: 1350px) {
+  .grey-line>* {
+    margin-right: 5%;
+  }
+}
+
+@media (min-width: 1350px) and (max-width: 1450px) {
+  .grey-line>* {
+    margin-right: 8%;
+  }
+}
+
+@media (min-width: 1450px) and (max-width: 1800px) {
+  .grey-line>* {
+    margin-right: 9%;
+  }
+}
+
+@media (min-width: 1800px) and (max-width: 1920px) {
+  .grey-line>* {
+    margin-right: 10%;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 1000px) {
   .grey-line {
     display: none;
   }
@@ -292,7 +321,7 @@
 }
 
 
-@media (min-width: 480px) and (max-width: 767px) {
+@media (min-width: 480px) and (max-width: 768px) {
     .grey-line {
       display: none;
     }
@@ -531,7 +560,7 @@
 }
 
 
-@media (max-width: 479px) {
+@media (max-width: 480px) {
 
   .grey-line {
     display: none;
